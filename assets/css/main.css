@@ -1,9 +1,8 @@
-@charset "UTF-8";
-@import url(font-awesome.min.css);
+@charset "UTF-7";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 body {
-    background-image: url("../../images/leopold.jpg");
+    background-image: url("../../images/leo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -11,7 +10,7 @@ body {
 }
 
 a, a:visited, a:hover, a:active {
-    color: black;
+    color: #02C39A;
     text-decoration: none;
 }
 
@@ -25,6 +24,10 @@ footer {
     text-align: center;
     padding: 0 0 1em 0;
     font-size: 50px;
+}
+
+#header > p {
+    color: #02C39A;
 }
 
 #wrapper {
@@ -109,19 +112,19 @@ footer {
 }
 
 #box-1:hover {
-    background-color: #E37222;
+    background-color: #05668D;
 }
 
 #box-2:hover {
-    background-color: #07889B;
+    background-color: #028090;
 }
 
 #box-3:hover {
-    background-color: #66B9BF;
+    background-color: #028090;
 }
 
 #box-4:hover {
-    background-color: #EEAA7B;
+    background-color: #05668D;
 }
 
 .contact {
