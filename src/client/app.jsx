@@ -11,11 +11,10 @@ const store = createStore(combineReducers({
 }));
 
 ReactDOM.render(
-  <Provider store={store}>
-    <div>
-      <BarkMessage />
-      <BarkButton />
-    </div>
-  </Provider>
+  <div>
+    <label htmlFor="slide-box">Education</label>
+    <input type="checkbox" id="slide-box"></input>
+    <div className="hidden-box"> University of Washington </div>
+  </div>
   , document.querySelector('.app')
 );

@@ -77,13 +77,18 @@
 	}));
 	
 	_reactDom2.default.render(_react2.default.createElement(
-	  _reactRedux.Provider,
-	  { store: store },
+	  'div',
+	  null,
+	  _react2.default.createElement(
+	    'label',
+	    { htmlFor: 'slide-box' },
+	    'Education'
+	  ),
+	  _react2.default.createElement('input', { type: 'checkbox', id: 'slide-box' }),
 	  _react2.default.createElement(
 	    'div',
-	    null,
-	    _react2.default.createElement(_barkMessage2.default, null),
-	    _react2.default.createElement(_barkButton2.default, null)
+	    { className: 'hidden-box' },
+	    ' University of Washington '
 	  )
 	), document.querySelector('.app'));
 
@@ -34080,13 +34085,14 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	/*
+	const mapDispatchToProps = dispatch => ({
+	  action: () => { dispatch(makeBark()); },
+	  actionLabel: 'Bark',
+	});
+	*/
 	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
-	  return {
-	    action: function action() {
-	      dispatch((0, _dogActions.makeBark)());
-	    },
-	    actionLabel: 'Bark'
-	  };
+	  return any;
 	};
 	
 	exports.default = (0, _reactRedux.connect)(null, mapDispatchToProps)(_button2.default);
@@ -34095,7 +34101,7 @@
 /* 371 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -34107,21 +34113,18 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var Button = function Button(_ref) {
-	  var action = _ref.action,
-	      actionLabel = _ref.actionLabel;
-	  return _react2.default.createElement(
-	    'button',
-	    { onClick: action },
-	    actionLabel
-	  );
-	};
+	/*
+	const Button = ({ action, actionLabel }) => <button onClick={action}>{actionLabel}</button>;
 	
 	Button.propTypes = {
-	  action: _react.PropTypes.func.isRequired,
-	  actionLabel: _react.PropTypes.string.isRequired
+	  action: PropTypes.func.isRequired,
+	  actionLabel: PropTypes.string.isRequired,
 	};
+	*/
 	
+	var Button = function Button() {
+	  return _react2.default.createElement("input", { type: "checkbox", "class": "slide-box" });
+	};
 	exports.default = Button;
 
 /***/ }
