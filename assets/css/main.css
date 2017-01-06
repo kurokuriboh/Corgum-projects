@@ -6,7 +6,16 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-a, a:visited, a:hover, a:active {
+a, a:visited, a:active {
+    color: #05668D;
+    text-decoration: none;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+a:hover {
     color: #02C39A;
     text-decoration: none;
 }
@@ -247,4 +256,13 @@ input#slide-box[type=checkbox]:checked ~ div.hidden-box {
 .section h3 span:after {
     left: 100%;
     margin-left: 15px;
+}
+
+.icons a {
+    margin: 20px;
+}
+
+.section-body {
+    margin-bottom: 20px;
+    text-align: center;
 }
